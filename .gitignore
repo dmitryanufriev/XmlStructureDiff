@@ -5,7 +5,6 @@ src/XmlStructureDiff.web/wwwroot/lib
 *.user
 *.min.js
 *.es5.js
-_references.js
 src/XmlStructureDiff.web/Scripts/Components/**/*.js
 src/XmlStructureDiff.web/Scripts/app.js
 src/XmlStructureDiff.web/wwwroot/css
