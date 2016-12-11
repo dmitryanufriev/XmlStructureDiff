@@ -23,19 +23,23 @@
         },
 
         sendFiles: function () {
-            var bus = this.props.bus;
-            var sourceFilename = this.state.sourceFile.name;
-            var actualFilename = this.state.actualFile.name;
+            var sourceFile = this.refs.sourceFile;
+            var actualFile = this.refs.actualFile;
 
+            if (!sourceFile.validate() | !actualFile.validate()) {
+                return;
+            }
+
+            var bus = this.props.bus;
             var form = new FormData();
-            form.append("source", this.state.sourceFile);
-            form.append("actual", this.state.actualFile);
+            form.append("source", sourceFile.file());
+            form.append("actual", actualFile.file());
 
             axios.post("/diff", form)
                 .then(function (response) {
                     bus.dispatch("onDiffComplete", {
-                        sourceFilename: sourceFilename,
-                        actualFilename: actualFilename,
+                        sourceFilename: sourceFile.file().name,
+                        actualFilename: actualFile.file().name,
                         diff: response.data
                     });
                 });
@@ -54,21 +58,8 @@
                       </div>
                       <div className="modal-body">
                         <form>
-                            <div className="form-group">
-                                <label htmlFor="source-file" className="control-label">Исходный файл</label>
-                                <input id="source-file" type="file" className="form-control" accept="application/xml" onChange={this.setSourceFile} />
-                                <span className="help-block">
-                                    Исходный файл - это эталонный документ. Относительно структуры этого файла производится
-                                    сравнение с актуальный документом.
-                                </span>
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="actual-file" className="control-label">Актуальный файл</label>
-                                <input id="actual-file" type="file" className="form-control" accept="application/xml" onChange={this.setActualFile} />
-                                <span className="help-block">
-                                    Актуальный файл - это новый документ, в котором возможно есть изменения структуры.
-                                </span>
-                            </div>
+                            <UI.Components.Forms.InputXmlFile ref="sourceFile" required="true" label="Исходный файл" comment="Исходный файл - это эталонный документ. Относительно структуры этого файла производится сравнение с актуальный документом." />
+                            <UI.Components.Forms.InputXmlFile ref="actualFile" required="true" label="Актуальный файл" comment="Актуальный файл - это новый документ, в котором возможно есть изменения структуры." />
                         </form>
                       </div>
                       <div className="modal-footer">

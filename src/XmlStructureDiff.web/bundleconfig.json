@@ -27,6 +27,7 @@
       "Scripts/Namespaces.js",
       "Scripts/Components/*.js",
       "Scripts/Components/Report/*.js",
+      "Scripts/Components/Forms/*.js",
       "Scripts/Services/*.js",
       "Scripts/app.js"
       //"Scripts/**/*.min.js"

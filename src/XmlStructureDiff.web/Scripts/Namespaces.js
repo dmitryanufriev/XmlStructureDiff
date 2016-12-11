@@ -4,4 +4,5 @@
     window.UI = window.UI || {};
     window.UI.Components = window.UI.Components || {};
     window.UI.Components.Report = window.UI.Components.Report || {};
+    window.UI.Components.Forms = window.UI.Components.Forms || {};
 })();

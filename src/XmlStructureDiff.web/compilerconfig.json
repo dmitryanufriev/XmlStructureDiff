@@ -42,5 +42,13 @@
   {
     "outputFile": "Scripts/Components/Report/DiffSummaryDeletedElements.js",
     "inputFile": "Scripts/Components/Report/DiffSummaryDeletedElements.jsx"
+  },
+  {
+    "outputFile": "Scripts/Components/Forms/InputXmlFile.js",
+    "inputFile": "Scripts/Components/Forms/InputXmlFile.jsx"
+  },
+  {
+    "outputFile": "Scripts/Services/UniqueId.es5.js",
+    "inputFile": "Scripts/Services/UniqueId.js"
   }
 ]
