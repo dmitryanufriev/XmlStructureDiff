@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{239CE991-AE7D-46A1-9C64-5B54EBCC889E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C2E67776-51A4-402B-81DE-E3F78A205C45}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "XmlStructureDiff.web", "src\XmlStructureDiff.web\XmlStructureDiff.web.xproj", "{7DEDF6E2-E5DB-4CE5-BEDF-7DA854C0ABB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{3BD00CFC-7A30-4C8A-8F07-A6E5981FD8B9}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "XmlStructureDiff.Comparison.Tests", "test\XmlStructureDiff.Comparison.Tests\XmlStructureDiff.Comparison.Tests.xproj", "{090CD958-5F40-49B4-91C1-2E4C658509A0}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "XmlStructureDiff.Comparison", "src\XmlStructureDiff.Comparison\XmlStructureDiff.Comparison.xproj", "{7E4D85CC-3AE0-4ABC-B255-5800990C66F2}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "XmlStructureDiff.Reporting", "src\XmlStructureDiff.Reporting\XmlStructureDiff.Reporting.xproj", "{B8CD9134-0E62-44A2-B109-FEB4CC9250DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DEDF6E2-E5DB-4CE5-BEDF-7DA854C0ABB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DEDF6E2-E5DB-4CE5-BEDF-7DA854C0ABB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DEDF6E2-E5DB-4CE5-BEDF-7DA854C0ABB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DEDF6E2-E5DB-4CE5-BEDF-7DA854C0ABB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{090CD958-5F40-49B4-91C1-2E4C658509A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{090CD958-5F40-49B4-91C1-2E4C658509A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{090CD958-5F40-49B4-91C1-2E4C658509A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{090CD958-5F40-49B4-91C1-2E4C658509A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E4D85CC-3AE0-4ABC-B255-5800990C66F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E4D85CC-3AE0-4ABC-B255-5800990C66F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E4D85CC-3AE0-4ABC-B255-5800990C66F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E4D85CC-3AE0-4ABC-B255-5800990C66F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CD9134-0E62-44A2-B109-FEB4CC9250DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CD9134-0E62-44A2-B109-FEB4CC9250DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CD9134-0E62-44A2-B109-FEB4CC9250DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CD9134-0E62-44A2-B109-FEB4CC9250DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7DEDF6E2-E5DB-4CE5-BEDF-7DA854C0ABB8} = {239CE991-AE7D-46A1-9C64-5B54EBCC889E}
+		{090CD958-5F40-49B4-91C1-2E4C658509A0} = {3BD00CFC-7A30-4C8A-8F07-A6E5981FD8B9}
+		{7E4D85CC-3AE0-4ABC-B255-5800990C66F2} = {239CE991-AE7D-46A1-9C64-5B54EBCC889E}
+		{B8CD9134-0E62-44A2-B109-FEB4CC9250DF} = {239CE991-AE7D-46A1-9C64-5B54EBCC889E}
+	EndGlobalSection
+EndGlobal

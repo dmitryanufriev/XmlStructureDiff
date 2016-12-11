@@ -1,0 +1,46 @@
+﻿[
+  {
+    "outputFile": "Scripts/app.js",
+    "inputFile": "Scripts/app.jsx"
+  },
+  {
+    "outputFile": "Scripts/Components/ApplicationActions.js",
+    "inputFile": "Scripts/components/ApplicationActions.jsx"
+  },
+  {
+    "outputFile": "Scripts/Components/XmlDocumentsForm.js",
+    "inputFile": "Scripts/Components/XmlDocumentsForm.jsx"
+  },
+  {
+    "outputFile": "Scripts/Services/EventEmitter.es5.js",
+    "inputFile": "Scripts/Services/EventEmitter.js"
+  },
+  {
+    "outputFile": "Scripts/Namespaces.es5.js",
+    "inputFile": "Scripts/Namespaces.js"
+  },
+  {
+    "outputFile": "Scripts/Components/Report/DiffSummary.js",
+    "inputFile": "Scripts/Components/Report/DiffSummary.jsx"
+  },
+  {
+    "outputFile": "Scripts/Components/Report/DiffSummaryHeader.js",
+    "inputFile": "Scripts/Components/Report/DiffSummaryHeader.jsx"
+  },
+  {
+    "outputFile": "Scripts/Components/Report/DiffSummaryElements.js",
+    "inputFile": "Scripts/Components/Report/DiffSummaryElements.jsx"
+  },
+  {
+    "outputFile": "Scripts/Components/Report/DiffSummaryAddedElements.js",
+    "inputFile": "Scripts/Components/Report/DiffSummaryAddedElements.jsx"
+  },
+  {
+    "outputFile": "Scripts/Components/Report/DiffSummaryChangedElements.js",
+    "inputFile": "Scripts/Components/Report/DiffSummaryChangedElements.jsx"
+  },
+  {
+    "outputFile": "Scripts/Components/Report/DiffSummaryDeletedElements.js",
+    "inputFile": "Scripts/Components/Report/DiffSummaryDeletedElements.jsx"
+  }
+]
