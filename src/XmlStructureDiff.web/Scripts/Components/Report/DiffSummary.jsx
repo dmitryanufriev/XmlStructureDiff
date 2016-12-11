@@ -4,7 +4,6 @@
         render: function () {
 
             if (this.props.summary) {
-                console.log(this.props.summary);
                 var diff = this.props.summary.diff;
 
                 return (
