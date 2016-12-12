@@ -17,6 +17,7 @@
 /// <reference path="js/app.min.js" />
 /// <reference path="lib/axios/dist/axios.js" />
 /// <reference path="lib/bootstrap/dist/js/bootstrap.js" />
+/// <reference path="lib/es6-promise/es6-promise.js" />
 /// <reference path="lib/jquery/dist/jquery.js" />
 /// <reference path="lib/react/react.js" />
 /// <reference path="lib/react/react-dom.js" />

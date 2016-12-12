@@ -1,4 +1,6 @@
 ﻿(function () {
+    ES6Promise.polyfill();
+
     window.Services = window.Services || {};
 
     window.UI = window.UI || {};
