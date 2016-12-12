@@ -15,6 +15,7 @@
 /// <reference path="../scripts/services/uniqueid.es5.js" />
 /// <reference path="../scripts/services/uniqueid.js" />
 /// <reference path="js/app.min.js" />
+/// <reference path="js/site.min.js" />
 /// <reference path="lib/axios/dist/axios.js" />
 /// <reference path="lib/bootstrap/dist/js/bootstrap.js" />
 /// <reference path="lib/es6-promise/es6-promise.js" />

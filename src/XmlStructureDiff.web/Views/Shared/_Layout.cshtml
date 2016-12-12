@@ -11,6 +11,7 @@
     </environment>
 
     <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
 </head>
@@ -34,6 +35,13 @@
     </environment>
 
     <environment names="Staging,Production">
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="~/lib/react/react.min.js"></script>
+        <script src="~/lib/react/react-dom.min.js"></script>
+        <script src="~/lib/es6-promise/es6-promise.min.js"></script>
+        <script src="~/lib/axios/dist/axios.min.js"></script>
+        <script src="~/js/app.min.js" asp-append-version="true"></script>
     </environment>
 
     @RenderSection("scripts", required: false)
