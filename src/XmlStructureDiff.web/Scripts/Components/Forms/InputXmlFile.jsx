@@ -7,6 +7,7 @@
 
         getInitialState: function () {
             return {
+                filename: "Файл не выбран",
                 valid: true
             };
         },
@@ -33,8 +34,10 @@
         },
 
         setFile: function (e) {
+            var file = e.target.files[0];
             this.setState({
-                file: e.target.files[0]
+                file: file,
+                filename: file ? file.name : "Файл не выбран"
             }, function () {
                 this.validate();
             });
@@ -48,13 +51,19 @@
 
             var error = null;
             if (!this.state.valid) {
-                error = <p className="text-danger">Это обязательное поле</p>;
+                error = <p className="text-danger">Нужно обязательно выбрать файл</p>;
             }
 
             return (
                 <div className="form-group">
-                    <label htmlFor={this.id} className="control-label">{this.props.label}</label>
-                    <input id={this.id} type="file" className="form-control" accept="application/xml" onChange={this.setFile} />
+                    <label className="control-label">{this.props.label}</label>
+                    <br />
+                    <label htmlFor={this.id} className="btn btn-default btn-sm" >
+                        <input id={this.id} type="file" accept="application/xml" style={{ display: "none" }} onChange={this.setFile} />
+                        Выбрать файл...
+                    </label>
+                    &nbsp;
+                    <span>{this.state.filename}</span>
                     {comment}
                     {error}
                 </div>
